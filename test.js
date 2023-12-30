@@ -34,11 +34,11 @@ function calculateTime(t1, t2, t3) {
     return Promise.all([wait1(t1), wait2(t2), wait3(t3)]).then(values => {
         const endTime = Date.now();
         const totalTime = endTime - startTime;
-        console.log(values);
+        // console.log(values);
         // Log values if needed for debugging
-        console.log(totalTime);
+        // console.log(totalTime);
         return totalTime;
     });
 }
-
+console.log(calculateTime(1,2,3));
 module.exports = calculateTime;
